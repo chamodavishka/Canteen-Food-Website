@@ -1,0 +1,201 @@
+  /* position the close button */
+  .imgcontainer3 {
+    position: relative;
+  }
+  
+  /* The Modal (background) */
+  .modal3 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal3-content3 {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 40%;
+    min-height: 230px;
+    border-radius: 4px;
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2), 0 9px 30px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  /* The Close Button (x) */
+  .close3 {
+    position: absolute;
+    right: 16px;
+    top: 0;
+    color: #555;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close3:hover,
+  .close3:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate3 {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+
+
+
+
+  .containerReq {
+    padding: 20px;
+  }
+
+  .txreq {
+    height: 100px;
+  }
+
+  @media screen and (max-width: 900px) {
+    .modal3-content3 {
+      width: 80%;
+
+    }
+
+    .txreq {
+      height: 195px;
+    }
+  }
+
+  @media screen and (max-width: 1100px) {
+    .modal3-content3 {
+      width: 60%;
+
+    }
+
+    .txreq {
+      height: 150px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .modal3-content3 {
+      width: 90%;
+
+    }
+
+    .txreq {
+      height: 210px;
+    }
+  }
+
+
+  .sbbtn {
+    background-color: #f44336;
+    color: white;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    width: 50%;
+    float: left;
+    margin-top: 10px;
+  }
+  
+  .sbbtn:hover {
+    opacity: 1;
+  }
+  
+  .cnbtn {
+    background-color: #ccc;
+    color: white;
+    opacity: 0.8;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    float: left;
+    margin-top: 10px;
+  }
+  
+  .cnbtn:hover {
+    opacity: 1;
+  }
+
+
+  .divsftext {
+
+  color: #666;
+  text-align: center;
+  margin-top: 38px;
+  margin-bottom: 15px;
+  margin-left: 5px;
+  font-size: 23px;
+  width: 80%;
+  float: left;
+  }
+
+  .modelh1 {
+    text-align: center;
+    color: #777;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  
+  .modelp {
+    text-align: center;
+    color: #aaa;
+    margin-bottom: 10px;
+    font-size: 17px;
+  }
+  
+  .sbbtn2 {
+    background-color: #f44336;
+    color: white;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    width: 50%;
+    float: left;
+    margin-top: 25px;
+  }
+  
+  .sbbtn2:hover {
+    opacity: 1;
+  }
+  
+  .cnbtn2 {
+    background-color: #ccc;
+    color: white;
+    opacity: 0.8;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    float: left;
+    margin-top: 25px;
+  }
+  
+  .cnbtn2:hover {
+    opacity: 1;
+  }
+  

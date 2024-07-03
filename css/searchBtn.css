@@ -1,0 +1,19 @@
+.header-one .search-box {
+    width: 250px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    display: none;
+}
+
+.header-one .search-box.active{
+    display: block;
+}
+
+.header-one .search-box input{
+    width: 100%;
+    height: 100%;
+    padding: 0 1rem;
+    font-size: 1.7rem;
+    text-transform: lowercase;
+}

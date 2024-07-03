@@ -1,0 +1,237 @@
+* {
+  box-sizing: border-box;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+input[type=text], input[type=number], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+input[type=text]:focus, input[type=number]:focus, select:focus, textarea:focus {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border: 2px solid #ccc;
+  outline: none;
+  background-color: #f6f6f6;
+}
+
+input[type=text]:hover, input[type=number]:hover, select:hover, textarea:hover {
+  border: 2px solid #ccc;
+}
+
+textarea {
+  resize: none;
+  height: 74px;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  font-weight: bold;
+  color: #777;
+}
+
+.buttonSubmit {
+  background-color: #009719;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  opacity: 0.8;
+  width: 100px;
+}
+
+.buttonSubmit:hover {
+  opacity: 1;
+}
+
+.buttonCancel {
+  background-color: #e23939;
+  color: white;
+  opacity: 0.8;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  margin-right: 10px;
+  width: 100px;
+}
+
+.buttonCancel:hover {
+  opacity: 1;
+}
+
+.containerUpdate {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2), 0 9px 30px 0 rgba(0, 0, 0, 0.19);
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout */
+@media screen and (max-width:750px) {
+  .col-25, .col-75, .buttonSubmit {
+    width: 100%;
+    margin-top: 0;
+    margin-top: 5px;
+  }
+
+  textarea {
+    height: 135px;
+  }
+
+  .buttonCancel{
+    width: 100%;
+    margin-top: 10px;
+    margin-right: 0;
+  }
+}
+
+.text{
+  color: #666;
+  text-align: center;
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+
+
+
+
+
+/* side navigation bar */
+.mainSideNav {
+  margin: 0;
+  padding: 0;
+  width: 20%;
+  background-color: #f9f9f9;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  box-shadow: 0 0 10px 0 rgba(50, 50, 50, 0.2), 0 0 50px 0 rgba(50, 50, 50, 0.22);
+  z-index: 1;
+}
+
+ul.sidenav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 20%;
+  background-color: #f9f9f9;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  box-shadow: 0 0 10px 0 rgba(50, 50, 50, 0.2), 0 0 50px 0 rgba(50, 50, 50, 0.22);
+}
+
+ul.sidenav li a {
+  display: block;
+  color: #777;
+  padding: 8px 17px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+ul.sidenav li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.22);
+}
+
+/* side navigation - current page selected*/
+ul.sidenav li a.current {
+  background-color: white;
+  border-left: 7px solid rgba(0, 0, 0, 0.3);;
+  color: #666;
+  box-shadow: 5px 0 11px 7px #eee,5px 0 11px 7px #eee;
+}
+
+ul.sidenav li a.current:hover {
+  padding: 8px 17px;
+  background-color: white;
+  border-left: 7px solid rgba(0, 0, 0, 0.3);;
+  color: #666;
+  box-shadow: 5px 0 11px 7px #eee,5px 0 11px 7px #eee;
+}
+
+ul.sidenav li a:hover {
+  background-color: white;
+  color: #666;
+  box-shadow: 5px 0 11px 7px #eee,5px 0 11px 7px #eee;
+  padding: 8px 25px;
+  -webkit-transition: 0.5s;
+  transition: 0.4s;
+}
+
+/* body content for side navigation */
+div.content {
+  margin-left: 20%;
+  padding: 1px 66px;
+  height: auto;
+}
+/*
+@media screen and (max-width: 1100px) {
+  div.content {
+      width: fit-content;
+  }
+}
+*/
+
+@media screen and (max-width: 1100px) {
+  .mainSideNav {
+      width: 190px;
+  }
+  ul.sidenav {
+      width: 190px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .containerUpdate {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 750px) {
+  div.content {
+    padding-right: 17px;
+    margin-left: 145px;
+  } 
+}
+@media screen and (max-width: 500px) {
+  div.content {
+    padding-right: 7px;
+    margin-left: 135px;
+  } 
+}

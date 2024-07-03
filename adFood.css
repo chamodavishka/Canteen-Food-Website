@@ -1,0 +1,327 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+*{-webkit-transition: 0.2s;
+    transition: 0.2s;}
+html{
+    scroll-behavior: smooth;
+}
+/* side navigation bar */
+.mainSideNav {
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    background-color: #f9f9f9;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    box-shadow: 0 0 10px 0 rgba(50, 50, 50, 0.2), 0 0 50px 0 rgba(50, 50, 50, 0.22);
+    z-index: 1;
+  }
+
+ul.sidenav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    background-color: #f9f9f9;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    box-shadow: 0 0 10px 0 rgba(50, 50, 50, 0.2), 0 0 50px 0 rgba(50, 50, 50, 0.22);
+}
+
+ul.sidenav li a {
+    display: block;
+    color: #777;
+    padding: 8px 17px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+ul.sidenav li {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.22);
+}
+
+/* side navigation - current page selected*/
+ul.sidenav li a.current {
+    background-color: white;
+    border-left: 7px solid rgba(0, 0, 0, 0.3);;
+    color: #666;
+    box-shadow: 5px 0 11px 7px #eee,5px 0 11px 7px #eee;
+  }
+
+ul.sidenav li a.current:hover {
+    padding: 8px 17px;
+    background-color: white;
+    border-left: 7px solid rgba(0, 0, 0, 0.3);;
+    color: #666;
+    box-shadow: 5px 0 11px 7px #eee,5px 0 11px 7px #eee;
+  }
+
+ul.sidenav li a:hover {
+    background-color: white;
+    color: #666;
+    box-shadow: 5px 0 11px 7px #eee,5px 0 11px 7px #eee;
+    padding: 8px 25px;
+    -webkit-transition: 0.5s;
+    transition: 0.4s;
+}
+
+
+/* body content for side navigation */
+div.content {
+    margin-left: 20%;
+    padding: 1px 66px;
+    height: auto;
+    position: relative;
+}
+
+
+
+
+ /* model of category adding */
+.cateAddDiv {
+    padding: 1px 15px 28px 15px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2), 0 9px 30px 0 rgba(0, 0, 0, 0.19);
+    background-color: #eee;
+}
+
+.modal1 input[type=text]{
+    width: 180px;
+    padding: 8px;
+    margin: 0;
+    display: block;
+    border: 2px solid white;
+    background: white;
+    border-radius: 17px;
+}
+  
+  /* Add a background color when the inputs get focus */
+.modal1 input[type=text]:focus{
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    border: 2px solid #ddd;
+    outline: none;
+}
+
+.modal1 input[type=text]:hover {
+    border: 2px solid #ddd;
+}
+
+.modal1 input[type=text]:valid {
+    border: 2px solid #ddd;
+}
+
+hr {
+    border: 1px solid #ccc;
+    margin-bottom: 25px;
+}
+
+ /* categore adding button */
+.addCateButton {
+    position: relative;
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 8px;
+    width: 90px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.addCateButton:hover {
+    opacity: 1;
+}
+  
+.addCateButton:after {
+    content: "";
+    background: #90EE90;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+  
+.addCateButton:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+/* mtable of category add */
+table.cateAdd {
+    width: 100%;
+    background-color: rgb(248, 248, 248);
+    padding-left: 33px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 55px;
+  }
+
+.cateAdd td {
+    color: #555;
+}
+
+
+
+
+/* model of category show div */
+.cateShowDiv {
+    padding: 0 15px 11px 15px;
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2), 0 9px 30px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* model of category show table */
+table.cateItem {
+    border-collapse: collapse;
+    width: 100%;
+
+}
+
+select {
+    width: 30%;
+    padding: 8px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    border-radius: 5px;
+    outline: none;
+    transition-duration: 0.4s;
+  }
+
+  select:hover{
+    background: #e1e1e1;
+  }
+
+.cateItem th {
+    padding:10px;
+    font-size: 18px;
+    border-bottom: 3px solid white;
+    background-color: #ccc;
+    color: white;
+}
+
+.cateItem td {
+padding: 8px;
+text-align: left;
+border-top: 3px solid white;
+border-bottom: 3px solid white;
+color: #555;
+}
+
+.cateItem tr {
+    background-color: #f9f9f9;
+}
+
+ /* categore delete button */
+ .deleteCateButton {
+    position: relative;
+    background-color: #f82222;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 8px;
+    width: 70px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.deleteCateButton:hover {
+    opacity: 1;
+}
+
+ /* categore edit button */
+ .editCateButton {
+    position: relative;
+    background-color: #446fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 8px;
+    width: 70px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.editCateButton:hover {
+    opacity: 1;
+}
+
+ /* categore hide button */
+ .hideCateButton {
+    position: relative;
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 8px;
+    width: 70px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.hideCateButton:hover {
+    opacity: 1;
+}
+
+ /* categore view button */
+ .viewCateButton {
+    position: relative;
+    background-color: yellowgreen;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 8px;
+    width: 70px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.viewCateButton:hover {
+    opacity: 1;
+}

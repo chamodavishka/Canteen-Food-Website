@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  
+  .text1 {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    resize: vertical;
+    background-color: white;
+    
+  }
+  
+  .text1:focus {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    border: 2px solid #bbb;
+    outline: none;
+    background-color: #f6f6f6;
+  }
+  
+  .text1:hover {
+    border: 2px solid #bbb;
+  }
+  
+
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    font-weight: bold;
+    color: #777;
+  }
+  
+  .submitbtn3 {
+    background-color: #009719;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    opacity: 0.8;
+    width: 160px;
+    float: right;
+    margin-top: 0px;
+  }
+  
+  .submitbtn3:hover {
+    opacity: 1;
+  }
+  
+  .cnbuttonadd {
+    background-color: #e23939;
+    color: white;
+    opacity: 0.8;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 160px;
+    float: left;
+    margin-top: 0px;
+    
+  }
+  
+  .cnbuttonadd:hover {
+    opacity: 1;
+  }
+
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .hr2 {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 20px;
+  }
+  .hr3 {
+    border: 1px solid #f1f1f1;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+
+
+
+
+
+  /* position the close button */
+.imgcontainer {
+    position: relative;
+  }
+  
+  .container {
+    padding: 16px;
+  }
+  
+  /* The Modal (background) */
+  .modal2 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal2-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 370px; /* Could be more or less, depending on screen size */
+    border-radius: 4px;
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2), 0 9px 30px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 16px;
+    top: 0;
+    color: #555;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+
+
+
+
+
+
+
+  .imgDiv{
+    width:74px; 
+    height:74px; 
+    border: 2px solid #ddd; 
+    cursor:pointer;
+    
+  }
+
+  .imgDiv:hover{
+    border-color: #bbb;
+  }

@@ -1,0 +1,277 @@
+* {
+  box-sizing: border-box;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+input[type=text], input[type=number], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+input[type=text]:focus, input[type=number]:focus, select:focus, textarea:focus {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border: 2px solid #ccc;
+  outline: none;
+  background-color: #f6f6f6;
+}
+
+input[type=text]:hover, input[type=number]:hover, select:hover, textarea:hover {
+  border: 2px solid #ccc;
+}
+
+textarea {
+  resize: none;
+  height: 105px;
+}
+
+label {
+  padding: 12px 12px 12px 8px;
+  display: inline-block;
+  font-weight: bold;
+  color: #777;
+}
+
+input[type=submit] {
+  background-color: #009719;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  opacity: 0.8;
+  width: 100px;
+}
+
+input[type=submit]:hover {
+  opacity: 1;
+}
+
+.buttonUpdate {
+  padding: 10px 13px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  width: 100px;
+  background-color: #ccc;
+  color: #222;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.buttonUpdate:hover {
+  background-color: #04AA6D;
+  color: #FFFFFF;
+}
+
+.buttonCancel {
+  opacity: 0.8;
+  padding: 10px 13px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  margin-right: 17px;
+  width: 100px;
+  background-color: #ccc;
+  color: #222;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.buttonCancel:hover {
+  background-color: #e23939;
+  color: #FFFFFF;
+}
+
+.container {
+  background-color: white;
+  padding: 20px 20px 5px 20px;
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2), 0 9px 30px 0 rgba(0, 0, 0, 0.19);
+  min-height: 95px;
+}
+
+.col-25 {
+  float: left;
+  width: 23%;
+  margin-top: 6px;
+  margin-left: 2%;
+}
+
+.col-75 {
+  float: left;
+  width: 73%;
+  margin-top: 6px;
+  margin-right: 2%;
+}
+
+.radioSelect {
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  resize: vertical;
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+.radio {
+  cursor: pointer;
+}
+.radioSpan {
+  font-size: 14px;
+  color: #666;
+}
+.radioSelect:hover {
+  border: 2px solid #ccc;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  textarea {
+    height: 135px;
+  }
+}
+
+.text{
+  color: #666;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+
+
+
+/* side navigation bar */
+.mainSideNav {
+  margin: 0;
+  padding: 0;
+  width: 20%;
+  background-color: #f9f9f9;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  box-shadow: 0 0 10px 0 rgba(50, 50, 50, 0.2), 0 0 50px 0 rgba(50, 50, 50, 0.22);
+  z-index: 1;
+}
+
+ul.sidenav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 20%;
+  background-color: #f9f9f9;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  box-shadow: 0 0 10px 0 rgba(50, 50, 50, 0.2), 0 0 50px 0 rgba(50, 50, 50, 0.22);
+}
+
+ul.sidenav li a {
+  display: block;
+  color: #777;
+  padding: 8px 17px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+ul.sidenav li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.22);
+}
+
+/* body content for side navigation */
+div.content {
+  margin-left: 20%;
+  padding: 1px 66px;
+  height: auto;
+}
+/*
+@media screen and (max-width: 1100px) {
+  div.content {
+      width: fit-content;
+  }
+}
+*/
+
+@media screen and (max-width: 1100px) {
+  .mainSideNav {
+      width: 190px;
+  }
+  ul.sidenav {
+      width: 190px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .containerUpdate {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  div.content {
+    padding-right: 30px;
+  } 
+}
+@media screen and (max-width: 510px) {
+  div.content {
+    padding-right: 10px;
+  } 
+}
+
+/* Auto refreash - new orders buttons */
+.buttonUpdateR {
+  opacity: 0.8;
+  padding: 10px 13px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  width: 100px;
+  background-color: #04AA6D;
+  color: #FFFFFF;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.buttonCancelR {
+  opacity: 0.7;
+  padding: 10px 13px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  margin-right: 17px;
+  width: 100px;
+  background-color: #e23939;
+  color: #FFFFFF;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}

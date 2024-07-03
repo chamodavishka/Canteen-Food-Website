@@ -1,0 +1,90 @@
+.text1{
+    color: #666;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+/* Style the horizontal ruler */
+hr {
+    border: 1px solid #f1f1f1;
+    margin: 0px;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col-total {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    margin-left: 0;
+}
+
+
+.cartbtn2 {
+    margin: 0;
+    float: right;
+    position: relative;
+    background-color: var(--dark-orange);
+    border: none;
+    font-size: 20px;
+    color: #FFFFFF;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 4px;
+}
+  
+.cartbtn2:after {
+    content: "";
+    background: #ffb13b;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+  
+.cartbtn2:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+  
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    font-weight: bold;
+    color: #777;
+    font-size: 15px;
+}
+  
+label.total {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    font-weight: 500;
+    color: #888;
+    font-size: 15px;
+}
+  
+.totalPrice {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    font-weight: bold;
+    color: #777;
+    font-size: 15px;
+}
